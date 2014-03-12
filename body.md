@@ -1,95 +1,133 @@
-Design Questions
-==============
+Design Questions and Concept
+==============  
 
-- **How can a virtual environment could be helpful for creative work?**
-- What are the obstacles in a digital driven creative process?
-- What are the special need of this new type of artist?
+Three decades after Xerox/Park research and the birth of the personal computer, digital media has become part of our time. What was initially a tool for data processing slowly transformed into an expressive medium chosen by some experimental artists. As John Maeda once stated, computer technology “is not a tool; it is a new material for expression.” \cite{maeda_design_1999}
+
+What new expressive possibilities does this medium provide? How do these technologies re-shape the creative process? The answers vary from  one artist to another. My thesis projects meditates on how technology can enhance the artist's creative environment so that she can adapt it to her own needs.
+
+Our leading question for this journey will be a search for a vision of what the studio of the future could look like, and what type of tools we can develop to make it happen.
 
 Research
 ==============
-This paper represents a major shifting in the direction of my thesis research. Until now I have been exploring the desktop metaphor and its implications, developing prototypes that raise the awareness of how people use computers and how they relate to them.
+Artists have been on the technological frontier since before the Renaissance. As Greg Turner and Ernest Edmonds said, "the physical world of artifacts is very different from the conceptual world of the imagination, and artists often find themselves pushing technology forward, creating new artifacts either as part of, or in order to construct, their art. These new artifacts present new ways of using and thinking about other things.” \cite{Art03towardsa}
 
-This paper is based on colleagues' and personal experiences around the *"creative coding"*\cite{maeda_creative_2004} practice. As the first step in a new direction this paper explores preliminary thoughts that need further research, interviews and user testing.
+Most of these artifacts, which develop the creative process, end up as custom tools for expression. Some of them have become so popular that it is impossible not to relate them to an expressive field: the brush for painting, the chisel for sculpture, the type notebook for poetry. Tools blend with the author to become extensions of their body and share the process of bringing imaginations to life. That could happen by learning how to use pre-existing tools, experimenting how to use them in new ways, or by developing new ones. In the new media scene, the latter two occur often.
 
-My departure point is an [openFrameworks](http://www.openframeworks.cc/) environment developed by *[Reza Ali](http://www.syedrezaali.com/)*, unofficially called *"the rezonator,"* used and extended by *[James George](http://jamesgeorge.org/)* and myself for the making of [CLOUDS Documentary](http://www.kickstarter.com/projects/1636630114/clouds-interactive-documentary). In it we put together an environment that fits our own needs of making interactive visual systems that could appear together with the interviews of the documentary.
-These visual systems need to be self-contained, easy to embed and fit the aesthetic of the Documentary curated by the supervision of the Art Director [Bradley G. Munkowitz](http://gmunk.com/). More importantly, it should provide an efficient and powerful environment to do good work inside CG standards.
+_"As long as you are not defined by software, you are helping to broaden the identity of the ideas that will get locked in for future generations."_ Lanier\cite{lanier_you_2010}
 
-From listening to my colleagues and my own experience I start noticing that one of the biggest obstacles of *creative coding* 
-relates to the double nature of the duty. There is a tension between the need to solve a logical problem while keeping a playful exploration. This could be why so many new media artists have hybrid backgrounds in-between arts and sciences. It's necessary to have tools to cope with these two universes.  
+As we already mentioned, digital computers were developed as information machines in the early stages of what was called _**Information Society**_ (Beniger\cite{beniger_control_1986} &  Salvaggio \cite{salvaggio_information_2013}). By this, man "has come to be viewed as an active processor of information." \cite{card_psychology_1986} The tools designed for this duty are the standard digital devices that we find in offices and homes, desktop computers, printers and scanners. All of these respond to standards becoming black boxes of Inputs/Outputs.
 
-## A. Promoting flow
-Csikszentmihalyi\cite{csikszentmihalyi_flow_1991} said flow can be describe as a natural fluctuation between convergent and divergent thinking, a dynamic balance between technical skills and open discovery. Like a jazz improvisation, musicians use standardized techniques and musical metrics as a structure for spontaneous collective exploration. 
+New media artists in their search for new expressive and poetic potential make constant efforts to re-appropriate existing technology and at the same time push the limits of it into new directions.
 
-Nikolaus Gansterer\cite{gansterer_drawing_2011} said something similar related to drawing: *"Since drawing can mediate between perception and reflection, it plays a constitutive role in the production and communication of knowledge"*
+This breaks with the passive paradigm of computer "users" to install an active attitude of creators. As Mitchel Resnick said, “computers will not live up to their potential until we start to think of them less like televisions and more like paint brushes. That is, we need to start seeing computers not simply as information machines, but also as a new medium for creative design and expression." \cite{Resnick06computeras}. Resnick emphasizes the need for turning the Information Society into a Creative Society. “The ultimate goal is a society of creative individuals who are constantly inventing new possibilities for themselves and their communities. " \cite{Resnick06computeras}
 
-In most art practices we can observe a dialogue between the medium (with its technical skills) and the imagination of the author. This dialogue usually presents as a dance or fight between the material and the desire. This process of shaping something until it is done needs air; it needs a space to happen. This space has to be able to hold the anxiety of uncertainty around a creative process. It contains the indetermination of the medium until it crystallizes into a recognizable shape, while at the same time letting the gestalt of the work open enough to allow meaning to emerge. 
+![William Kentridge Studio, making an animation using a projector and a camera](images/williamk2.png)
 
-![Coding the algorithm and tweaking the values](images/01.png)
+William Kentridge, a famous artist very well known for his drawings, paintings and animations, is not usually considered a new media artist, but in his work he uses a camera and a projector to construct animations. Sometimes he starts by filming himself performing different movements. Then, after editing the video, he projects it on top of a board and uses pieces of paper to animate frame by frame. In this process he incorporates both digital and analog materials. This is an excellent example of de-centralization of technology. In it, devices are reduced to a mere set of input and output devices that become part of a creative process that incorporates expressive potential from both worlds. This exquisite model of working teaches us about a flexible flow between "real" and "virtual" media, one where the artist can initialize an expansive dialog that integrates together analog and digital gestures.
+ 
+As Klemmer and Hartmann warn us, "one of the most sweeping — and unintended — transformations that the desktop computing paradigm has brought about is the extent to which the physical performance of work has homogenized." \cite{Klemmer06howbodies} The expressive potential of our bodies is restrained by the same gestures we use for navigating the web and writing an e-mail. In order to explore new frontiers, we need to integrate the body in new ways by modifying and re-appropriating the available technology.
 
-How does this translate to creative coding practice? In a first approach to this dilemma, I like to think that it could be solved by separating the algorithmic structure of a program from the values that it uses. This would separate the computational structure (with its convergent and logical nature), from the tweaking and playing with values (divergent aesthetic exploration). By separating these two processes into two different moments we delineate spaces that hold two different state of consciousness. Separating these moments and adding different helping elements (embedded functions and GUI elements)  will allow the artist to maintain a more effortless balance between these two ways of thinking (see Figure 1).
+Michael Polanyi refers to our physical body as "the ultimate instrument of all our external knowledge, whether intellectual or practical experience is always in terms of the world to which we are attending from our body."\cite{polanyi_tacit_2009} 
+In this sense, digital creative processes that successfully incorporate the richness and rawness of direct manipulation of materials will result in a larger bandwidth of poetic and expressive potential.
 
-## B. IN and OUT from the virtual 
-Contrasting with traditional artistic practices, digital creative processes tend to stay too much time in a single environment: the virtual world. The apollonian nature of computation ends up dominating the process. Generative and Glitch art tend to break this logic by bringing complexity or randomness to a procedural and highly ruled universe.
-The dialog of this conversation needs to be expanded and trascended beyond the virtuality of computation. I propose that this creative process could be empowered by going out of the computer to the "real" world and back again to the computational universe. An oscillation between virtual and real, between the analog and digital. 
-
-How can we open a highly logical virtual practice to the spontaneous rawness of analog moments? By creating opportunities for non-computational randomness, freeing the medium from its own structure, injecting the algorithm with raw and indefinite content, balancing the apollonian structure of computation with a little of our dionisiac curiousity. Like a needle passing from one side to the other side of fabric, a creative coding environment should promote connection to different sensors and actors. An ecosystem of Input/Output devices would make these transitions smooth and easy.
-
-![RaspberryPI/Cam taking a photo over wi-fi](images/05.png)
-
-These transitions will become opportunities of translation and mutation of meaning, brief windows of indetermination and posible error that open the chance for expressiveness. Using this "space between" mediums the artist can participate in the process directly by filtering her own expressive nature. During this translation, some meaning gets lost and some is added.
-
-## C. Open to others
-As an expanding spiral, what begins as a dialogue between the algorithm and its values then expands to a dialogue between the digital and the analog. The last turn of the spiral is to open the dialogue between the artist and her process to other artists. 
-By integrating tools into this prototyping environment that allow for documentation and shareability of work and its process, the artist can initiate a dialog with her own community. These could be simple tools like snapshots, video recording, and note-taking, along with the easy ability to upload this content to on-line social media (see Figure 3).
-
-![Every Screenshot or video could be uploaded to Flickr automatically](images/07.png)
 
 Project Concepts
 ==============
-Following these three guiding concepts I have changed and expand ed the CloudsVisualSystem Environment in the following ways:
 
-### A. Separating the Algorithm from the Values
+### Impetus
 
-- Breaking the CloudsVisualSystem class into three different templates: ```UI2DProject```, ```UI3DProject``` and ```UITimelineProjects```
+Make an ecosystem of devices that can be combined, adapted and re-purposed to enhance the expressive needs of artists and creators in general.
 
-- Constructing an abstract class call ```UIClass``` which allows new objects and their own UI to be added to the environment as modules.
+### What?
 
-- Adding extra functions to the project template for adding, saving, loading, hiding, and showing UI modules.
+RaspberryPi is a small and cheap board capable of running a complete Linux system on it. Designed as an educative tool for children, this little board offers the possibility to easily incorporate it on an infinite variety of DIY projects thanks to a series of GPIOs (General Purpose Inputs and Outputs) and expansion slots for HD cameras. In the last month, this device has grabbed the attention of different creative and maker communities such as Scratch, PureData and openFrameworks. It has become a popular device not only for hobbyist and educational projects, but also as a host to new media art and interactive installations.
 
-- Replacing all dynamically allocated UI objects for smart pointers that take care of the garbage collection.
+![RaspberryPi Model B](images/rpi.png)
 
-- Standardizing color values so they're treated in HSB format for intuitive control. 
+Because of this versatility and low cost, I chose the RaspberryPi as the perfect device to design a series of hardware modules and openSource programs that will become a set of creative tools. Following Mark Weiser's vision of what he call "ubiquitous computing"\cite{Weiser} this project aims to develop an ecosystem of interconnected devices designed to blend into an environment to the point of becoming invisible to the user, while at the same time, assist humans during the creative process.
 
-- Making native elements of colors (```aColor```) and positions (```aPoint```) with tween interpolated values, so each modification is applied progressively, making nice automatic animations when switching presets.
+I will start developing two modules (an input and an output) that will promote flow of content between digital and analog.  
 
-- Adding dragging and doubleClicking capabilities to 3D elements, such as the lights (see Figure 4).
+- Input: a wireless camera 
+- Output: a wireless wall plotter
 
-- Adding native UI modules for several GL objects like: cameras, materials, lights, fog, shaderes and background.
+### Why an ecosystem?
+Throughout this semester, I have worked on different digital environments to promote creativity. At the end of this experience, it was clear that no digital environment in itself will assure a creative process. They become little experiments that seem to satisfy very specific needs, always with a risk of becoming prescriptive and patronizing to the user.
 
-![Intuitive interactive elements for easy edition of 3D scenes](images/03.png)
+It is clear that whatever tool or environment I develop should be flexible and broad enough to cover both digital and analog materials together with the possibility of being easily adapted and re-purposed.
 
-## B. Easy IN/Easy Out
-For this prototype I experimented with two DIY modules that are able to connect to the virtual environment and allow the user to grab or export content as part of his own creative process.
+The idea is an Ecosystem not only in response to a network of devices capable of speaking with each other, but also to an adaptive set of elements (different RaspberryPi kits) that bring a framework, a common language that lets you interact with the system.
 
-The first module is a *remote camera* using a [RaspberryPi](http://www.raspberrypi.org/) and [RaspberryCam](http://www.raspberrypi.org/camera) that takes a picture by PHP calls. After this image is requested, it is sent back to the creative coding environment. This allows the user to take pictures remotely over a wi-fi network. This module could be re-purposed in a variety of techniques such as: time-lapse, stop-motion, film recording, light painting, slit-cams, etc (see Figure 2).  
- 
-![Wall-Plotter printing over USB using Arduino](images/06.png)
-
-The second device is a *wallPlotter* powered and connected to the prototyping environment using [Arduino](http://arduino.cc/) (see Figure 4). Like the camera, this plotter is flexible enough to be re-purposed to fit in different techniques and transmedia experiments.
+The ability of ecosystems to adapt to new scenarios is crucial to our goal of enhancing creative environments. 
 
 
-## C. Multiplying 
+### How?
+This flexibility will be based not just on a modular design (based on modular hardware that is easy to install on top of the RaspberryPi), but also by providing different ways of interacting with the software. 
 
-In any moment of the process the artist can take snapshots or videos of the playing work and upload them to a flickr account in order to be shared and documented (see Figure 3).
+![Layered Design for a broad audience](images/diagram.png)
 
-![3D Note taking](images/08.png)
+In the less advanced usage of the device, it will be possible to take photos or print by accessing the devices using a web interface designed in HTML/CSS and Java Script. This will make it easy and intuitive to use, especially for beginners. 
 
-The environment has the ability to make notes inside the 3D space. Like highlighting and note-taking in a book helps to initiate a dialog between a work and a reviewer, placing 3D notes allows for a graphical way of commenting, sharing and sketching on the fly (see Figure 6). 
+For users that already are familiarized with creative environments (scratch, processing, openFrameworks, cinder, Adobe tools, etc.) it will be possible for them to use these input/output devices through plugins. This also promotes the use of these modules inside the different communities that surround these creative frameworks.  
 
-All these options together with the capability of switching between sketches makes this environment particularly useful for presenting work in an elegant way to others.
+For those advanced users who are making their own tools, it will be possible to access a common PHP API running on top of the Apache servers inside the raspberryPi. These servers will be acting as a proxy to the native C/C++ applications, so that more advanced users can also modify or re-appropriate by modifying the open source code.
+
+In this way, a layered software design will allow multiple access points to the devices according to the level of expertise and inner motivations of the artist. Providing for a broad spectrum of users will ease the transition from user to maker with powerful new tools.
+
+User Scenario 
+==============
+Inspired by William Kentridge’s methodology, I dedicated the last month to exploring the boundaries between digital and physical tools to develop the prototype for this project.
+
+![Step 01](images/01.png)
+
+1. I started by using the wireless camera module to make a SlitCam of myself.
+
+![Step 02a](images/02.png)
+
+![Step 02b](images/03.png)
+
+2. Then I used the wireless vPlotter module to print on top of a piece of wood in order to carve it later.
+
+![Step 03](images/04.png)
+
+3. With the wood cut finish I inked it and printed it over paper. 
+
+A similar process could be made over fabric, plexiglass, acrylic and other materials. Also, it could be useful on printings that require bigger materials. The pen of the plotter could also be changed for a dissection-knife, laser or regular brush.
+
+As well the wireless camera could be adapted for making stop-motions, light paintings, a video conference, a documentation tool, a time lapse and many other uses. 
+
+The techniques or tweaks of these devices are not as important as the imagination that they can trigger. That is why the most important goal for this project is to gain the attention and enthusiasm of different communities and help them adapt these devices to their own tools and artistic practice.
+
+Precedents
+==============
+
+Besides William Kentridge’s studio practices, I want to present other artists who have developed custom tools.
+
+- [Jurg Lehni](http://juerglehni.com) is an interdisciplinary artist with vast experience making his own tools. A big part of his work consists of the making of drawing machines. The most famous one is [Hektor](http://juerglehni.com/works/hektor/), the first wall plotter. 
+
+- [Anton Marini](http://vade.info/) is a VJ artist famous for his live performance, but also for being one of the developers of [Syphon](http://syphon.v002.info/), a very flexible and powerful tool for VJs and new media artist in general that let you share visual content across MacOS. This tool is broadly used and one of the reasons for that is because of the broad spectrum of communities for whom they develop plugins. They realize very clearly they essence of the tools and promote Syphon’s ability of letting you connect everything to everything else, no matter what framework you are using. I consider this a very valuable model to follow for this project. 
+
+- [MakeyMakey](http://www.makeymakey.com/) It was not developed as a creative tool in itself. Rather, it is more like a device that is easy to plug, use and scale. It is a great example of how to present a good tool by showing different uses.
+
+Accomplished so far
+==============
+- Wireless camera API (PHP)
+- Wireless camera openFrameworks addon (C++)
+- Wireless camera working prototype
+- Wireless wall plotter API (PHP)
+- Wireless wall plotter WebApp (HTML/CSS/JS)
+- Wireless wall plotter console program (C/C++)
+- Design of the electronic shields for the wall Plotter that mounts on top of the RaspberryPi
+- Wireless wall plotter openFrameworks addon
+- Wireless wall plotter working prototype
+
+![Wall Plotter electronic shield for the RaspberryPi](images/sheild.png)
 
 Next Steps
-==============
-On further prototypes I will research traditional and experimental studio practices searching for ways to extend and empower creative process by integrating technology. This will require a better understanding of the specific expressive capabilities of digital media, together with some experimentation on how raw materials and analog techniques could be beneficial for a creative process.
-
-This effort will culminate in the production of an ecosystem of devices that help artists to translate between media—a collection of bridges. 
+==============  
+* Re-design the electronic shield for the wall plotter module to power the RaspberryPi and the stepper motors at the same time. 
+* Design combinable enclosures for motors, the camera, and the RaspberryPi.
+* Unique packaging, branding and logo.
+* Documentation & Tutorials together with a video
+* Design a unified style for the interfaces (UI & UX need)
+* User testing: I already spoke with Katherine Moriwaki about setting up a wall plotter on D12 for public use in order to gather information and test its usage. 
